@@ -1,0 +1,30 @@
+import java.io.*;
+class First
+{
+    public static void main (String s[])throws Exception
+{
+    DataInputStream input=new DataInputStream (System.in);
+    double r,h;
+    int a,b;
+    System.out.println("Enter a Number");
+    r=Double.parseDouble(input.readLine());
+    h=Double.parseDouble(input.readLine());
+    System.out.println("Enter a Integer No");
+    a=Integer.parseInt(input.readLine());
+    b=Integer.parseInt(input.readLine());
+    add (r,h);
+    add (a,b);
+}
+public static void add (double c,double d)
+{
+    double o;
+    o=r+h;
+System.out.println("addition="+c);
+}
+public static void add (int p,int q)
+{
+    int a;
+    a=p+q;
+    System.out.println("addition="+a);
+}
+}
